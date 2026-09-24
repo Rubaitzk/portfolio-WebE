@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
-<!-- skills.html — Technical Skills · Portfolio v2.0 · Muhammad Rubait Zakria -->
+<!DOCTYPE html>
+<!-- skills.html — Technical Skills · Muhammad Rubait Zakria Portfolio (HTML & CSS) -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Technical skills of Muhammad Rubait Zakria — C++, Python, Java, JavaScript, React, SQL, Git, Linux, and more.">
+  <meta name="description" content="Technical skills of Muhammad Rubait Zakria — C++, Python, Java, JavaScript, React, SQL, Git, Linux, and educational background.">
   <meta name="author" content="Muhammad Rubait Zakria">
   <title>Skills — Muhammad Rubait Zakria</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,209 +13,258 @@
 </head>
 <body>
 
-  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
-  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
-
   <!-- ===== NAVIGATION ===== -->
-  <nav class="nav" id="main-nav" aria-label="Main navigation">
-    <a href="index.html" class="nav-logo">MR<span>Z</span></a>
-    <div class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="skills.html" class="active" aria-current="page">Skills</a>
-      <a href="hobbies.html">Hobbies</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">MR<span>Z</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="skills.html" class="active" aria-current="page">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <!-- ===== PAGE HERO ===== -->
-  <div class="page-hero">
-    <div class="page-hero-gfx" aria-hidden="true"></div>
-    <div class="page-hero-inner">
-      <div class="eyebrow">My Expertise</div>
-      <h1>Technical<br><span class="hollow">Arsenal</span></h1>
-      <p class="page-subtitle">A breakdown of the languages, frameworks, tools, and soft skills I bring to every project.</p>
-    </div>
-  </div>
+  <main>
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+      <div class="page-header-inner">
+        <div class="eyebrow">Technical Competence</div>
+        <h1 class="page-title">Skills &amp; Expertise</h1>
+        <p class="page-subtitle">A comprehensive breakdown of programming languages, tools, frameworks, soft skills, and academic qualifications.</p>
+      </div>
+    </section>
 
-  <!-- ===== PROGRAMMING LANGUAGES ===== -->
-  <section class="section anim-reveal" id="languages" aria-labelledby="lang-heading">
-    <div class="eyebrow">Languages</div>
-    <h2 class="h-xl" id="lang-heading" style="margin-bottom:32px;">Programming Languages</h2>
-    <p class="body-lg" style="max-width:560px;margin-bottom:40px;">Core languages I write production-quality code in, listed by proficiency.</p>
+    <!-- ===== PROGRAMMING LANGUAGES ===== -->
+    <section class="section" id="languages" aria-labelledby="lang-heading">
+      <div class="eyebrow">Core Stack</div>
+      <h2 class="h-xl" id="lang-heading">Programming Languages</h2>
+      <p class="body-lg body-lead">Languages I write production code in, structured with static CSS indicator bars.</p>
 
-    <!-- 2-column grid of skill bars -->
-    <div class="grid-box skills-full-grid">
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-lang">Language</span>
-          <div class="skill-name-row">
-            <span class="skill-name">C++</span>
-            <span class="skill-pct">90%</span>
+      <div class="skills-container">
+        <!-- C++ -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">C++</h3>
+            <span class="skill-category">Language</span>
           </div>
-          <div class="skill-track"><div class="skill-fill w-90"></div></div>
-        </div>
-      </div>
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-lang">Language</span>
-          <div class="skill-name-row">
-            <span class="skill-name">Python</span>
-            <span class="skill-pct">85%</span>
+          <div class="flex-between">
+            <span class="text-muted">OOP, Data Structures, STL</span>
+            <span class="skill-percent">90%</span>
           </div>
-          <div class="skill-track"><div class="skill-fill w-85"></div></div>
-        </div>
-      </div>
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-lang">Language</span>
-          <div class="skill-name-row">
-            <span class="skill-name">Java</span>
-            <span class="skill-pct">80%</span>
+          <div class="skill-bar-wrap" aria-label="90% proficiency">
+            <div class="skill-bar-fill w-90"></div>
           </div>
-          <div class="skill-track"><div class="skill-fill w-80"></div></div>
         </div>
-      </div>
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-lang">Language</span>
-          <div class="skill-name-row">
-            <span class="skill-name">JavaScript</span>
-            <span class="skill-pct">75%</span>
-          </div>
-          <div class="skill-track"><div class="skill-fill w-75"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== FRAMEWORKS & TOOLS ===== -->
-  <section class="section anim-reveal" id="frameworks" aria-labelledby="fw-heading">
-    <div class="eyebrow">Tools &amp; Frameworks</div>
-    <h2 class="h-xl" id="fw-heading" style="margin-bottom:32px;">Frameworks &amp; Dev Tools</h2>
-    <p class="body-lg" style="max-width:560px;margin-bottom:40px;">Technologies I use to build, test, and ship software across the stack.</p>
+        <!-- Python -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">Python</h3>
+            <span class="skill-category">Language</span>
+          </div>
+          <div class="flex-between">
+            <span class="text-muted">Data Analysis, AI/ML, Automation</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar-wrap" aria-label="85% proficiency">
+            <div class="skill-bar-fill w-85"></div>
+          </div>
+        </div>
 
-    <div class="grid-box skills-full-grid">
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-lang">Markup</span>
-          <div class="skill-name-row">
-            <span class="skill-name">HTML &amp; CSS</span>
-            <span class="skill-pct">95%</span>
+        <!-- Java -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">Java</h3>
+            <span class="skill-category">Language</span>
           </div>
-          <div class="skill-track"><div class="skill-fill w-95"></div></div>
-        </div>
-      </div>
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-tool">Tool</span>
-          <div class="skill-name-row">
-            <span class="skill-name">Git &amp; GitHub</span>
-            <span class="skill-pct">90%</span>
+          <div class="flex-between">
+            <span class="text-muted">Enterprise OOP, Multithreading</span>
+            <span class="skill-percent">80%</span>
           </div>
-          <div class="skill-track"><div class="skill-fill w-90"></div></div>
-        </div>
-      </div>
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-tool">Tool</span>
-          <div class="skill-name-row">
-            <span class="skill-name">SQL &amp; Databases</span>
-            <span class="skill-pct">85%</span>
+          <div class="skill-bar-wrap" aria-label="80% proficiency">
+            <div class="skill-bar-fill w-80"></div>
           </div>
-          <div class="skill-track"><div class="skill-fill w-85"></div></div>
         </div>
-      </div>
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-fw">Framework</span>
-          <div class="skill-name-row">
-            <span class="skill-name">React</span>
-            <span class="skill-pct">70%</span>
-          </div>
-          <div class="skill-track"><div class="skill-fill w-70"></div></div>
-        </div>
-      </div>
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-tool">Platform</span>
-          <div class="skill-name-row">
-            <span class="skill-name">Linux OS</span>
-            <span class="skill-pct">80%</span>
-          </div>
-          <div class="skill-track"><div class="skill-fill w-80"></div></div>
-        </div>
-      </div>
-      <div class="grid-cell">
-        <div class="skill-full-cell">
-          <span class="skill-badge badge-fw">Framework</span>
-          <div class="skill-name-row">
-            <span class="skill-name">Node.js</span>
-            <span class="skill-pct">65%</span>
-          </div>
-          <div class="skill-track"><div class="skill-fill w-65"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== SOFT SKILLS ===== -->
-  <section class="section anim-reveal" id="soft-skills" aria-labelledby="soft-heading">
-    <div class="eyebrow">Beyond Code</div>
-    <h2 class="h-xl" id="soft-heading" style="margin-bottom:40px;">Soft Skills</h2>
+        <!-- JavaScript -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">JavaScript</h3>
+            <span class="skill-category">Language</span>
+          </div>
+          <div class="flex-between">
+            <span class="text-muted">DOM, ES6+, Web APIs</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar-wrap" aria-label="75% proficiency">
+            <div class="skill-bar-fill w-75"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- 4-column icon cards -->
-    <div class="soft-grid">
-      <div class="soft-card">
-        <span class="soft-icon" aria-hidden="true">🧠</span>
-        <h4>Problem Solving</h4>
-        <p>Breaking complex challenges into manageable pieces and finding elegant, efficient solutions.</p>
-      </div>
-      <div class="soft-card">
-        <span class="soft-icon" aria-hidden="true">🤝</span>
-        <h4>Teamwork</h4>
-        <p>Collaborating in agile teams, participating in code reviews, and pair programming sessions.</p>
-      </div>
-      <div class="soft-card">
-        <span class="soft-icon" aria-hidden="true">💬</span>
-        <h4>Communication</h4>
-        <p>Clearly articulating technical concepts to both technical and non-technical audiences.</p>
-      </div>
-      <div class="soft-card">
-        <span class="soft-icon" aria-hidden="true">⏱️</span>
-        <h4>Time Management</h4>
-        <p>Balancing a heavy academic workload with personal projects while consistently meeting deadlines.</p>
-      </div>
-    </div>
-  </section>
+    <!-- ===== FRAMEWORKS & TOOLS ===== -->
+    <section class="section" id="tools" aria-labelledby="tools-heading">
+      <div class="eyebrow">Ecosystem</div>
+      <h2 class="h-xl" id="tools-heading">Frameworks &amp; Developer Tools</h2>
+      <p class="body-lg body-lead">Technologies and development platforms I use to build, version, and manage software projects.</p>
 
-  <!-- ===== EDUCATION TIMELINE ===== -->
-  <section class="section anim-reveal" id="education" aria-labelledby="edu-heading">
-    <div class="eyebrow">Academic Journey</div>
-    <h2 class="h-xl" id="edu-heading" style="margin-bottom:48px;">Education</h2>
+      <div class="skills-container">
+        <!-- HTML & CSS -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">HTML5 &amp; CSS3</h3>
+            <span class="skill-category cat-fw">Frontend</span>
+          </div>
+          <div class="flex-between">
+            <span class="text-muted">Semantic markup, Responsive, Float/Flex/Grid</span>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="skill-bar-wrap" aria-label="95% proficiency">
+            <div class="skill-bar-fill w-95"></div>
+          </div>
+        </div>
 
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-year">2024 – 2028 (Expected)</div>
-        <h4>Bachelor of Engineering — Software Engineering</h4>
-        <p>National University of Sciences and Technology (NUST), School of Electrical Engineering and Computer Science (SEECS), Islamabad. Specializing in software architecture, algorithms, and AI/ML applications.</p>
+        <!-- Git & GitHub -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">Git &amp; GitHub</h3>
+            <span class="skill-category cat-tool">Tooling</span>
+          </div>
+          <div class="flex-between">
+            <span class="text-muted">Version control, Branching, Collaboration</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-bar-wrap" aria-label="90% proficiency">
+            <div class="skill-bar-fill w-90"></div>
+          </div>
+        </div>
+
+        <!-- SQL & Databases -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">SQL &amp; Relational Databases</h3>
+            <span class="skill-category cat-tool">Database</span>
+          </div>
+          <div class="flex-between">
+            <span class="text-muted">Schema design, Complex queries, Optimization</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar-wrap" aria-label="85% proficiency">
+            <div class="skill-bar-fill w-85"></div>
+          </div>
+        </div>
+
+        <!-- Linux OS -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">Linux &amp; Shell Scripting</h3>
+            <span class="skill-category cat-tool">System</span>
+          </div>
+          <div class="flex-between">
+            <span class="text-muted">Arch/Ubuntu, Bash, System administration</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar-wrap" aria-label="80% proficiency">
+            <div class="skill-bar-fill w-80"></div>
+          </div>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">React</h3>
+            <span class="skill-category cat-fw">Framework</span>
+          </div>
+          <div class="flex-between">
+            <span class="text-muted">Components, Hooks, State management</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-bar-wrap" aria-label="70% proficiency">
+            <div class="skill-bar-fill w-70"></div>
+          </div>
+        </div>
+
+        <!-- Node.js -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <h3 class="skill-title">Node.js &amp; Express</h3>
+            <span class="skill-category cat-fw">Backend</span>
+          </div>
+          <div class="flex-between">
+            <span class="text-muted">REST APIs, Middleware, NPM ecosystem</span>
+            <span class="skill-percent">65%</span>
+          </div>
+          <div class="skill-bar-wrap" aria-label="65% proficiency">
+            <div class="skill-bar-fill w-65"></div>
+          </div>
+        </div>
       </div>
-      <div class="tl-item">
-        <div class="tl-year">2022 – 2024</div>
-        <h4>Intermediate (FSc Pre-Engineering)</h4>
-        <p>Completed pre-engineering studies with a strong foundation in mathematics, physics, and computer science fundamentals. Achieved competitive scores that earned admission to NUST.</p>
+    </section>
+
+    <!-- ===== SOFT SKILLS ===== -->
+    <section class="section" id="soft-skills" aria-labelledby="soft-heading">
+      <div class="eyebrow">Collaboration</div>
+      <h2 class="h-xl" id="soft-heading">Professional Soft Skills</h2>
+      <p class="body-lg body-lead">Interpersonal attributes that enable effective communication, team collaboration, and reliable project delivery.</p>
+
+      <div class="soft-skills-grid">
+        <div class="soft-skill-card">
+          <span class="soft-skill-icon" aria-hidden="true">🧠</span>
+          <h4>Problem Solving</h4>
+          <p>Analyzing complex requirements and decomposing them into efficient, maintainable algorithmic steps.</p>
+        </div>
+
+        <div class="soft-skill-card">
+          <span class="soft-skill-icon" aria-hidden="true">🤝</span>
+          <h4>Teamwork</h4>
+          <p>Collaborating effectively in lab teams, participating in peer code reviews, and pair programming.</p>
+        </div>
+
+        <div class="soft-skill-card">
+          <span class="soft-skill-icon" aria-hidden="true">💬</span>
+          <h4>Communication</h4>
+          <p>Conveying technical architecture and design choices clearly to both technical and non-technical peers.</p>
+        </div>
+
+        <div class="soft-skill-card">
+          <span class="soft-skill-icon" aria-hidden="true">⏱️</span>
+          <h4>Time Management</h4>
+          <p>Prioritizing multiple coursework deliverables and personal projects with strict deadline adherence.</p>
+        </div>
       </div>
-      <div class="tl-item">
-        <div class="tl-year">2020 – 2022</div>
-        <h4>Matriculation (SSC)</h4>
-        <p>Built early foundations in science and technology. Developed initial interest in programming through self-taught Python and personal web development projects.</p>
+    </section>
+
+    <!-- ===== EDUCATION TIMELINE ===== -->
+    <section class="section" id="education" aria-labelledby="edu-heading">
+      <div class="eyebrow">Qualifications</div>
+      <h2 class="h-xl" id="edu-heading">Academic Journey</h2>
+      <p class="body-lg body-lead">Formal educational background from secondary school through current engineering studies at NUST.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2024 – 2028 (Expected)</div>
+          <h4>Bachelor of Engineering — Software Engineering</h4>
+          <p>National University of Sciences and Technology (NUST), School of Electrical Engineering and Computer Science (SEECS), Islamabad. Specializing in software design, algorithms, databases, and web systems.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2022 – 2024</div>
+          <h4>Intermediate (FSc Pre-Engineering)</h4>
+          <p>Completed higher secondary education with strong marks in Mathematics, Physics, and Computer Science fundamentals, securing admission to NUST SEECS.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2020 – 2022</div>
+          <h4>Matriculation (SSC - Science)</h4>
+          <p>Foundational education in sciences with distinction. Began self-taught coding in Python and building fundamental HTML websites during this period.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer>
@@ -228,10 +277,9 @@
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <p class="footer-copy">© 2026 Muhammad Rubait Zakria</p>
+      <p class="footer-copy">© 2026 Muhammad Rubait Zakria. Lab 03 HTML &amp; CSS.</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
-<!-- hobbies.html — Life Beyond Code · Portfolio v2.0 · Muhammad Rubait Zakria -->
+<!DOCTYPE html>
+<!-- hobbies.html — Life Beyond Code · Muhammad Rubait Zakria Portfolio (HTML & CSS) -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hobbies and interests of Muhammad Rubait Zakria — Linux, web dev, AI/ML, tech reading, gaming, and photography.">
+  <meta name="description" content="Hobbies and personal interests of Muhammad Rubait Zakria — Linux tinkering, web development, AI exploration, tech reading, gaming, and photography.">
   <meta name="author" content="Muhammad Rubait Zakria">
   <title>Hobbies — Muhammad Rubait Zakria</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,142 +13,127 @@
 </head>
 <body>
 
-  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
-  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
-
   <!-- ===== NAVIGATION ===== -->
-  <nav class="nav" id="main-nav" aria-label="Main navigation">
-    <a href="index.html" class="nav-logo">MR<span>Z</span></a>
-    <div class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="skills.html">Skills</a>
-      <a href="hobbies.html" class="active" aria-current="page">Hobbies</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">MR<span>Z</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html" class="active" aria-current="page">Hobbies</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <!-- ===== PAGE HERO ===== -->
-  <div class="page-hero">
-    <div class="page-hero-gfx" aria-hidden="true"></div>
-    <div class="page-hero-inner">
-      <div class="eyebrow">Life Beyond Code</div>
-      <h1>What I Do<br><span class="hollow">For Fun</span></h1>
-      <p class="page-subtitle">Technology is my career path and my playground. Here's how I spend time when I'm not in class or in a terminal.</p>
-    </div>
-  </div>
+  <main>
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+      <div class="page-header-inner">
+        <div class="eyebrow">Life Beyond Code</div>
+        <h1 class="page-title">Personal Interests &amp; Hobbies</h1>
+        <p class="page-subtitle">Technology is both my academic discipline and my playground. Here is how I invest my creative energy outside the lecture hall.</p>
+      </div>
+    </section>
 
-  <!-- ===== HOBBY BENTO GRID ===== -->
-  <section class="section anim-reveal" id="hobbies" aria-labelledby="hobbies-heading">
-    <div class="eyebrow">Passions &amp; Interests</div>
-    <h2 class="h-xl" id="hobbies-heading" style="margin-bottom:40px;">My Hobbies</h2>
+    <!-- ===== HOBBIES GRID ===== -->
+    <section class="section" id="hobbies" aria-labelledby="hobbies-heading">
+      <div class="eyebrow">Passions</div>
+      <h2 class="h-xl" id="hobbies-heading">What I Do For Fun</h2>
+      <p class="body-lg body-lead">A collection of activities that keep me curious, sharpen my analytical skills, and provide balanced perspective.</p>
 
-    <!--
-      Bento grid — a modern asymmetric card layout.
-      span-2 makes a card span 2 columns (featured).
-    -->
-    <div class="bento-grid">
+      <div class="hobbies-grid">
+        <!-- Linux Tinkering (Featured) -->
+        <article class="hobby-card featured">
+          <span class="hobby-icon" aria-hidden="true">🐧</span>
+          <h3>Linux Tinkering &amp; Customization</h3>
+          <p>Configuring operating systems is one of my most engaging pastimes. I maintain custom dotfiles, explore tiling window managers, and frequently test diverse Linux distributions to deepen my understanding of operating system architectures.</p>
+          <ul>
+            <li>Hands-on experience with Arch Linux, Ubuntu, and Fedora</li>
+            <li>Shell scripting and automated development environment setups</li>
+            <li>GRUB configuration and dual-boot partition management</li>
+          </ul>
+        </article>
 
-      <!-- Featured: Linux (spans 2 cols) -->
-      <article class="bento-card span-2">
-        <span class="bento-icon" aria-hidden="true">🐧</span>
-        <h3>Linux Tinkering</h3>
-        <p>Configuring and exploring different Linux distributions is one of my favourite pastimes. I maintain a dual-boot setup and enjoy customizing window managers, shell configs, and system-level tooling. Each distro installation teaches me something new about how operating systems work.</p>
-        <ul>
-          <li>Arch Linux, Ubuntu, Fedora — all tried multiple times</li>
-          <li>Custom dotfiles, aliases, and shell scripts</li>
-          <li>Dual-boot setup management and GRUB configuration</li>
-        </ul>
-        <span class="bento-bg-glyph" aria-hidden="true">🐧</span>
-      </article>
+        <!-- Web Development -->
+        <article class="hobby-card">
+          <span class="hobby-icon" aria-hidden="true">🌐</span>
+          <h3>Web Development</h3>
+          <p>Building side projects and crafting interfaces from scratch. I enjoy transforming UI concepts into fast, accessible, responsive websites.</p>
+          <ul>
+            <li>Full-stack prototyping</li>
+            <li>Clean semantic markup &amp; CSS architecture</li>
+            <li>Responsive layouts &amp; accessible web standards</li>
+          </ul>
+        </article>
 
-      <!-- Web Dev -->
-      <article class="bento-card">
-        <span class="bento-icon" aria-hidden="true">🌐</span>
-        <h3>Web Development</h3>
-        <p>Building custom applications from scratch. I love turning ideas into real, working products — from UI design to backend logic.</p>
-        <ul>
-          <li>React &amp; Next.js frontends</li>
-          <li>REST API design</li>
-          <li>Responsive, accessible UIs</li>
-        </ul>
-        <span class="bento-bg-glyph" aria-hidden="true">🌐</span>
-      </article>
+        <!-- AI Exploration -->
+        <article class="hobby-card">
+          <span class="hobby-icon" aria-hidden="true">🤖</span>
+          <h3>AI &amp; Machine Learning</h3>
+          <p>Experimenting with computer vision models and natural language processing pipelines. I enjoy studying model internals and practical deployment.</p>
+          <ul>
+            <li>Computer vision experiments</li>
+            <li>Exploratory data analysis with Python</li>
+            <li>Understanding neural network architectures</li>
+          </ul>
+        </article>
 
-      <!-- AI/ML -->
-      <article class="bento-card">
-        <span class="bento-icon" aria-hidden="true">🤖</span>
-        <h3>AI &amp; ML Exploration</h3>
-        <p>Exploring computer vision and NLP mechanics. Fascinated by how neural networks learn patterns — not just how to call an API.</p>
-        <ul>
-          <li>Computer vision experiments</li>
-          <li>NLP &amp; text analysis</li>
-          <li>Model training &amp; fine-tuning</li>
-        </ul>
-        <span class="bento-bg-glyph" aria-hidden="true">🤖</span>
-      </article>
+        <!-- Tech Reading -->
+        <article class="hobby-card">
+          <span class="hobby-icon" aria-hidden="true">📚</span>
+          <h3>Technical Reading</h3>
+          <p>Reading classic software engineering literature, system design manuals, and engineering blogs to build long-term engineering depth.</p>
+          <ul>
+            <li>Software design patterns &amp; clean architecture</li>
+            <li>Distributed systems and network protocols</li>
+            <li>Open-source documentation and engineering case studies</li>
+          </ul>
+        </article>
 
-      <!-- Tech Reading -->
-      <article class="bento-card">
-        <span class="bento-icon" aria-hidden="true">📚</span>
-        <h3>Tech Reading</h3>
-        <p>Books, blogs, and papers on software architecture, distributed systems, and clean code. Reading keeps me sharp on concepts that coursework doesn't cover.</p>
-        <ul>
-          <li>Design patterns &amp; clean architecture</li>
-          <li>Tech blogs &amp; official documentation</li>
-          <li>AI/ML research papers</li>
-        </ul>
-        <span class="bento-bg-glyph" aria-hidden="true">📚</span>
-      </article>
+        <!-- Gaming -->
+        <article class="hobby-card">
+          <span class="hobby-icon" aria-hidden="true">🎮</span>
+          <h3>Strategy &amp; Puzzle Gaming</h3>
+          <p>Playing strategic, problem-solving games that demand resource management, quick reflexes, and systemic thinking.</p>
+          <ul>
+            <li>Complex strategy simulations</li>
+            <li>Logical problem-solving games</li>
+            <li>Appreciation for game UI and UX design</li>
+          </ul>
+        </article>
 
-      <!-- Gaming -->
-      <article class="bento-card">
-        <span class="bento-icon" aria-hidden="true">🎮</span>
-        <h3>Gaming</h3>
-        <p>Strategy and story-driven games that challenge problem-solving. Gaming also helps me appreciate great UI/UX design in interactive contexts.</p>
-        <ul>
-          <li>Strategy &amp; puzzle games</li>
-          <li>Story-driven RPGs</li>
-          <li>Competitive multiplayer</li>
-        </ul>
-        <span class="bento-bg-glyph" aria-hidden="true">🎮</span>
-      </article>
+        <!-- Photography -->
+        <article class="hobby-card">
+          <span class="hobby-icon" aria-hidden="true">📸</span>
+          <h3>Landscape Photography</h3>
+          <p>Capturing the natural beauty and architectural heritage of Pakistan. Photography teaches composition and lighting—skills that directly enhance UI design.</p>
+          <ul>
+            <li>Landscape and architectural framing</li>
+            <li>Golden hour nature photography</li>
+            <li>Digital post-processing and color grading</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-      <!-- Photography -->
-      <article class="bento-card">
-        <span class="bento-icon" aria-hidden="true">📸</span>
-        <h3>Photography</h3>
-        <p>Capturing landscapes and urban scenes around Islamabad. Photography trains an eye for composition — a skill that transfers directly to UI design.</p>
-        <ul>
-          <li>Landscape &amp; nature photography</li>
-          <li>Urban street photography</li>
-          <li>Photo editing &amp; post-processing</li>
-        </ul>
-        <span class="bento-bg-glyph" aria-hidden="true">📸</span>
-      </article>
+    <!-- ===== QUOTE ===== -->
+    <section class="section" aria-label="Inspirational quote">
+      <div class="quote-card">
+        <blockquote>"The best way to predict the future is to invent it."</blockquote>
+        <cite>— Alan Kay, Computer Scientist &amp; Pioneer of Object-Oriented Programming</cite>
+      </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- ===== QUOTE ===== -->
-  <section class="section anim-reveal" aria-label="Favourite quote">
-    <div class="quote-block">
-      <blockquote>"The best way to predict the future is to invent it."</blockquote>
-      <cite>— Alan Kay, Computer Scientist &amp; Pioneer of OOP</cite>
-    </div>
-  </section>
-
-  <!-- ===== FUN FACT ===== -->
-  <section class="section anim-reveal" aria-labelledby="fact-heading">
-    <div class="fun-fact-box">
-      <h3 id="fact-heading">Fun Fact About Me</h3>
-      <p>I've reinstalled Linux over 20 times across different distributions — not because things broke, but because I genuinely enjoy the setup process. Each distro teaches me something new about how operating systems work under the hood. At this point, it's basically a hobby within a hobby.</p>
-    </div>
-  </section>
+    <!-- ===== FUN FACT ===== -->
+    <section class="section" aria-labelledby="fact-heading">
+      <div class="fun-fact">
+        <h3 id="fact-heading">Fun Fact About Me</h3>
+        <p>I have reinstalled and configured various Linux distributions over 20 times—not out of necessity, but for the sheer joy of understanding package managers, display servers, and kernel modules. It has become a rewarding technical hobby in itself.</p>
+      </div>
+    </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer>
@@ -161,10 +146,9 @@
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <p class="footer-copy">© 2026 Muhammad Rubait Zakria</p>
+      <p class="footer-copy">© 2026 Muhammad Rubait Zakria. Lab 03 HTML &amp; CSS.</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
