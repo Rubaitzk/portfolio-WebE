@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<!-- contact.html — Contact · Portfolio v2.0 · Muhammad Rubait Zakria -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Muhammad Rubait Zakria — contact form, email, social links, and frequently asked questions.">
+  <meta name="author" content="Muhammad Rubait Zakria">
+  <title>Contact — Muhammad Rubait Zakria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">MR<span>Z</span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <div class="page-hero-gfx" aria-hidden="true"></div>
+    <div class="page-hero-inner">
+      <div class="eyebrow">Let's Connect</div>
+      <h1>Get<br><span class="hollow">In Touch</span></h1>
+      <p class="page-subtitle">Have a project idea, a question, or just want to say hello? Fill out the form and I'll get back to you within 24–48 hours.</p>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section anim-reveal" id="contact" aria-labelledby="contact-heading">
+    <h2 class="h-xl" id="contact-heading" style="margin-bottom:40px;">Send a Message</h2>
+
+    <div class="contact-layout">
+
+      <!-- Contact Form -->
+      <div class="form-card">
+        <h3>Drop me a line</h3>
+        <p>I read every message and reply personally. No bots, no auto-replies.</p>
+
+        <!--
+          <form> collects user input.
+          action="#" keeps it on the same page (front-end only).
+          JS handles the submit feedback.
+        -->
+        <form action="#" id="contact-form" novalidate>
+
+          <!-- Two-column row: Name + Email -->
+          <div class="fld-2col">
+            <div class="fld">
+              <!-- Floating label: label appears above input on focus -->
+              <input type="text"  id="name"  name="name"  placeholder=" " autocomplete="name" required aria-required="true">
+              <label for="name">Your Name</label>
+            </div>
+            <div class="fld">
+              <input type="email" id="email" name="email" placeholder=" " autocomplete="email" required aria-required="true">
+              <label for="email">Email Address</label>
+            </div>
+          </div>
+
+          <!-- Subject dropdown -->
+          <div class="fld">
+            <select id="subject" name="subject" aria-label="Select subject">
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="project">Project Collaboration</option>
+              <option value="freelance">Freelance Inquiry</option>
+              <option value="academic">Academic Question</option>
+              <option value="general">General Hello</option>
+            </select>
+            <label for="subject">Subject</label>
+          </div>
+
+          <!-- Message textarea -->
+          <div class="fld is-textarea">
+            <textarea id="message" name="message" rows="5" placeholder=" " required aria-required="true"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+
+          <button type="submit" class="btn-send" id="submit-btn">Send Message →</button>
+        </form>
+      </div>
+
+      <!-- Contact Info Sidebar -->
+      <aside class="contact-info-col" aria-label="Contact information">
+
+        <div class="info-tile">
+          <div class="info-ico" aria-hidden="true">📧</div>
+          <div class="info-text">
+            <h4>Email</h4>
+            <p><a href="mailto:rubait.zakria@example.com">rubait.zakria@example.com</a></p>
+          </div>
+        </div>
+
+        <div class="info-tile">
+          <div class="info-ico" aria-hidden="true">📍</div>
+          <div class="info-text">
+            <h4>Location</h4>
+            <p>NUST H-12 Campus<br>Islamabad, Pakistan</p>
+          </div>
+        </div>
+
+        <div class="info-tile">
+          <div class="info-ico" aria-hidden="true">💻</div>
+          <div class="info-text">
+            <h4>GitHub</h4>
+            <p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com/rubait</a></p>
+          </div>
+        </div>
+
+        <div class="info-tile">
+          <div class="info-ico" aria-hidden="true">🔗</div>
+          <div class="info-text">
+            <h4>LinkedIn</h4>
+            <p><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rubait</a></p>
+          </div>
+        </div>
+
+        <!-- Availability indicator -->
+        <div class="avail-tile">
+          <h4><span class="avail-dot" aria-hidden="true"></span>Currently Available</h4>
+          <p>Open to freelance projects, collaborations, and internship opportunities starting 2026.</p>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section anim-reveal" id="faq" aria-labelledby="faq-heading">
+    <div class="eyebrow">Common Questions</div>
+    <h2 class="h-xl" id="faq-heading" style="margin-bottom:12px;">FAQ</h2>
+    <p class="body-lg" style="max-width:520px;margin-bottom:40px;">Quick answers to the most common questions I get.</p>
+
+    <!--
+      Native HTML5 <details> / <summary> — no JavaScript needed.
+      Provides accessible, zero-JS accordion functionality.
+    -->
+    <div class="faq-wrap">
+
+      <details class="faq-item" id="faq-1">
+        <summary>
+          <span class="faq-q">What kind of projects do you work on?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>I work on full-stack web applications — React frontends, Node.js backends, and SQL databases. I'm also exploring AI/ML projects involving computer vision and NLP. I enjoy projects that require learning new technologies and solving genuinely complex problems.</p>
+        </div>
+      </details>
+
+      <details class="faq-item" id="faq-2">
+        <summary>
+          <span class="faq-q">Are you available for freelance work?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>Yes — I'm currently open to freelance projects, especially in web development and front-end engineering. I balance my academic schedule at NUST with client work and consistently meet deadlines. Let's discuss what you need.</p>
+        </div>
+      </details>
+
+      <details class="faq-item" id="faq-3">
+        <summary>
+          <span class="faq-q">What technologies do you specialise in?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>My core stack: C++, Python, Java, JavaScript for languages; HTML/CSS, React, and SQL for the web. For tooling: Git, GitHub, and Linux-based environments. I'm also building skills in AI/ML frameworks like PyTorch.</p>
+        </div>
+      </details>
+
+      <details class="faq-item" id="faq-4">
+        <summary>
+          <span class="faq-q">How can we collaborate on a project?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>Fill out the contact form above or send me an email directly. Describe your project idea, timeline, and any specific requirements. I'll review it and respond within 24–48 hours to discuss next steps.</p>
+        </div>
+      </details>
+
+      <details class="faq-item" id="faq-5">
+        <summary>
+          <span class="faq-q">Do you contribute to open-source?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>I'm beginning to contribute to open-source projects, particularly in the Linux and web development ecosystems. I believe open-source is the best way to learn from experienced engineers and give back to the community that helped me grow.</p>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">MR<span>Z</span></a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Muhammad Rubait Zakria</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* ── Contact Form Submit Feedback ────────── */
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var btn = document.getElementById("submit-btn");
+      var original = btn.textContent;
+      btn.textContent = "✓ Message Sent!";
+      btn.style.background = "#4ade80";
+      btn.disabled = true;
+      setTimeout(function () {
+        btn.textContent = original;
+        btn.style.background = "";
+        btn.disabled = false;
+        e.target.reset();
+      }, 3500);
+    });
+  </script>
+</body>
+</html>

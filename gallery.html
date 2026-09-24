@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<!-- gallery.html — Photo Gallery · Portfolio v2.0 · Muhammad Rubait Zakria -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery by Muhammad Rubait Zakria — landscapes, architecture, and memorable moments from across Pakistan.">
+  <meta name="author" content="Muhammad Rubait Zakria">
+  <title>Gallery — Muhammad Rubait Zakria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">MR<span>Z</span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <div class="page-hero-gfx" aria-hidden="true"></div>
+    <div class="page-hero-inner">
+      <div class="eyebrow">Visual Stories</div>
+      <h1>My Photo<br><span class="hollow">Gallery</span></h1>
+      <p class="page-subtitle">A curated collection of landscapes, architecture, and moments captured across Pakistan. Photography teaches me composition — a skill that transfers directly to design.</p>
+    </div>
+  </div>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section anim-reveal" id="gallery" aria-labelledby="gallery-heading">
+    <h2 class="h-xl" id="gallery-heading" style="margin-bottom:8px;">Captures</h2>
+    <p class="body-lg" style="margin-bottom:40px;">Click any photo to view it full-size.</p>
+
+    <!--
+      CSS Masonry layout using column-count.
+      Images also have float-based markup inside .gallery-float-wrap (Lab 03).
+    -->
+    <div class="masonry-grid gallery-float-wrap" role="list">
+
+      <figure class="masonry-item" role="listitem"
+              onclick="openLightbox('images/pic1.jpg','Pakistan Monument — Islamabad')"
+              tabindex="0"
+              onkeypress="if(event.key==='Enter') openLightbox('images/pic1.jpg','Pakistan Monument — Islamabad')"
+              aria-label="View Pakistan Monument photo full size">
+        <!-- float-left applied for Lab 03 compliance -->
+        <img src="images/pic1.jpg" alt="Pakistan Monument — an iconic landmark illuminated at dusk in Islamabad" loading="lazy">
+        <figcaption class="masonry-overlay">
+          <span class="masonry-cat">Architecture</span>
+          <span class="masonry-title">Pakistan Monument</span>
+          <span class="masonry-desc">The iconic landmark illuminated at dusk, Islamabad</span>
+        </figcaption>
+      </figure>
+
+      <figure class="masonry-item" role="listitem"
+              onclick="openLightbox('images/pic2.jpg','Autumn in Passu — Karakoram Mountains')"
+              tabindex="0"
+              onkeypress="if(event.key==='Enter') openLightbox('images/pic2.jpg','Autumn in Passu — Karakoram Mountains')"
+              aria-label="View Autumn in Passu photo full size">
+        <img src="images/pic2.jpg" alt="Golden autumn foliage against the Karakoram mountains in Passu" loading="lazy">
+        <figcaption class="masonry-overlay">
+          <span class="masonry-cat">Landscape</span>
+          <span class="masonry-title">Autumn in Passu</span>
+          <span class="masonry-desc">Golden autumn foliage against the Karakoram</span>
+        </figcaption>
+      </figure>
+
+      <figure class="masonry-item" role="listitem"
+              onclick="openLightbox('images/pic3.jpg','Mountain Passage — Northern Pakistan')"
+              tabindex="0"
+              onkeypress="if(event.key==='Enter') openLightbox('images/pic3.jpg','Mountain Passage — Northern Pakistan')"
+              aria-label="View Mountain Passage photo full size">
+        <img src="images/pic3.jpg" alt="A serene view of northern mountain trails in Pakistan" loading="lazy">
+        <figcaption class="masonry-overlay">
+          <span class="masonry-cat">Nature</span>
+          <span class="masonry-title">Mountain Passage</span>
+          <span class="masonry-desc">A serene view of the northern mountain trails</span>
+        </figcaption>
+      </figure>
+
+      <figure class="masonry-item" role="listitem"
+              onclick="openLightbox('images/pic4.jpg','Scenic Vista — Northern Pakistan')"
+              tabindex="0"
+              onkeypress="if(event.key==='Enter') openLightbox('images/pic4.jpg','Scenic Vista — Northern Pakistan')"
+              aria-label="View Scenic Vista photo full size">
+        <img src="images/pic4.jpg" alt="Breathtaking views of northern Pakistan landscape" loading="lazy">
+        <figcaption class="masonry-overlay">
+          <span class="masonry-cat">Travel</span>
+          <span class="masonry-title">Scenic Vista</span>
+          <span class="masonry-desc">Exploring the breathtaking views of the north</span>
+        </figcaption>
+      </figure>
+
+      <figure class="masonry-item" role="listitem"
+              onclick="openLightbox('images/pic5.jpg','Into the Wild — Pakistan Wilderness')"
+              tabindex="0"
+              onkeypress="if(event.key==='Enter') openLightbox('images/pic5.jpg','Into the Wild — Pakistan Wilderness')"
+              aria-label="View Into the Wild photo full size">
+        <img src="images/pic5.jpg" alt="Raw, untouched beauty of Pakistan's natural wilderness" loading="lazy">
+        <figcaption class="masonry-overlay">
+          <span class="masonry-cat">Wilderness</span>
+          <span class="masonry-title">Into the Wild</span>
+          <span class="masonry-desc">Raw, untouched beauty of Pakistan's natural landscapes</span>
+        </figcaption>
+      </figure>
+
+      <!-- Float clear div (Lab 03 requirement) -->
+      <div class="clear"></div>
+
+    </div>
+
+    <!-- Photo stats row -->
+    <div class="photo-stats" aria-label="Gallery statistics">
+      <div class="photo-stat-cell">
+        <span class="photo-stat-icon" aria-hidden="true">📷</span>
+        <span class="photo-stat-num" data-count="5" data-suffix="+">5+</span>
+        <span class="photo-stat-lbl">Photos Captured</span>
+      </div>
+      <div class="photo-stat-cell">
+        <span class="photo-stat-icon" aria-hidden="true">🏔️</span>
+        <span class="photo-stat-num" data-count="3" data-suffix="+">3+</span>
+        <span class="photo-stat-lbl">Locations Explored</span>
+      </div>
+      <div class="photo-stat-cell">
+        <span class="photo-stat-icon" aria-hidden="true">🌅</span>
+        <span class="photo-stat-num">4</span>
+        <span class="photo-stat-lbl">Categories</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <img src="" alt="" id="lb-img">
+    <p id="lb-caption"></p>
+    <button class="lb-close" id="lb-close" aria-label="Close photo viewer" onclick="closeLightbox()">✕</button>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">MR<span>Z</span></a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Muhammad Rubait Zakria</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* ── Lightbox ────────────────────────────── */
+    var lb   = document.getElementById("lightbox");
+    var lbImg= document.getElementById("lb-img");
+    var lbCap= document.getElementById("lb-caption");
+
+    function openLightbox(src, caption) {
+      lbImg.src = src;
+      lbImg.alt = caption;
+      lbCap.textContent = caption;
+      lb.classList.add("lb-open");
+      lb.setAttribute("aria-hidden","false");
+      document.body.style.overflow = "hidden";
+    }
+    function closeLightbox() {
+      lb.classList.remove("lb-open");
+      lb.setAttribute("aria-hidden","true");
+      document.body.style.overflow = "";
+      lbImg.src = "";
+    }
+    /* Close on backdrop click */
+    lb.addEventListener("click", function(e){ if(e.target === lb) closeLightbox(); });
+    /* Close on Escape */
+    document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeLightbox(); });
+  </script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<!-- index.html — Home · Portfolio v2.0 · Muhammad Rubait Zakria -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Rubait Zakria — Software Engineering student at NUST SEECS. Building web apps, exploring AI, and configuring Linux.">
+  <meta name="author" content="Muhammad Rubait Zakria">
+  <title>Muhammad Rubait Zakria — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom cursor elements -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Scroll progress indicator -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">MR<span>Z</span></a>
+    <div class="nav-links" id="nav-links">
+      <!-- Active class marks current page -->
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <!-- Subtle background photo -->
+    <div class="hero-bg-photo" aria-hidden="true">
+      <img src="images/05.jpg" alt="">
+    </div>
+    <!-- Decorative grid lines -->
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <!-- Availability badge -->
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Currently studying @ NUST SEECS
+      </div>
+
+      <!-- Big editorial name -->
+      <h1 class="hero-title" id="hero-title">
+        <span class="ln1">Muhammad</span>
+        <span class="ln2">Rubait</span>
+        <span class="ln3">Zakria.</span>
+      </h1>
+
+      <!-- Description + tags row -->
+      <div class="hero-meta">
+        <p class="hero-desc">
+          <strong>Software Engineering student</strong> — building full-stack apps,
+          navigating Linux rabbit holes, and training neural nets at NUST SEECS, Islamabad.
+        </p>
+        <div class="hero-tags" aria-label="Key skills">
+          <span>Full-Stack Dev</span>
+          <span>Linux</span>
+          <span>AI / ML</span>
+          <span>C++</span>
+          <span>Python</span>
+        </div>
+      </div>
+
+      <!-- CTAs -->
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary" id="hero-cta-contact">Let's Talk →</a>
+        <a href="skills.html"  class="btn btn-ghost"   id="hero-cta-skills">View Skills</a>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-hint-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS TICKER ===== -->
+  <!-- Horizontal scrolling marquee of technologies -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <!-- First copy -->
+      <span class="t-accent">C++</span><span>&nbsp;·&nbsp;</span>
+      <span>Python</span><span>&nbsp;·&nbsp;</span>
+      <span>JavaScript</span><span>&nbsp;·&nbsp;</span>
+      <span>Java</span><span>&nbsp;·&nbsp;</span>
+      <span class="t-accent">React</span><span>&nbsp;·&nbsp;</span>
+      <span>Node.js</span><span>&nbsp;·&nbsp;</span>
+      <span>SQL</span><span>&nbsp;·&nbsp;</span>
+      <span class="t-accent">Git &amp; GitHub</span><span>&nbsp;·&nbsp;</span>
+      <span>Linux</span><span>&nbsp;·&nbsp;</span>
+      <span>AI / ML</span><span>&nbsp;·&nbsp;</span>
+      <span class="t-accent">HTML &amp; CSS</span><span>&nbsp;·&nbsp;</span>
+      <span>Arch Linux</span><span>&nbsp;·&nbsp;</span>
+      <span>Open Source</span><span>&nbsp;·&nbsp;</span>
+      <!-- Second copy (duplicate for seamless loop) -->
+      <span class="t-accent">C++</span><span>&nbsp;·&nbsp;</span>
+      <span>Python</span><span>&nbsp;·&nbsp;</span>
+      <span>JavaScript</span><span>&nbsp;·&nbsp;</span>
+      <span>Java</span><span>&nbsp;·&nbsp;</span>
+      <span class="t-accent">React</span><span>&nbsp;·&nbsp;</span>
+      <span>Node.js</span><span>&nbsp;·&nbsp;</span>
+      <span>SQL</span><span>&nbsp;·&nbsp;</span>
+      <span class="t-accent">Git &amp; GitHub</span><span>&nbsp;·&nbsp;</span>
+      <span>Linux</span><span>&nbsp;·&nbsp;</span>
+      <span>AI / ML</span><span>&nbsp;·&nbsp;</span>
+      <span class="t-accent">HTML &amp; CSS</span><span>&nbsp;·&nbsp;</span>
+      <span>Arch Linux</span><span>&nbsp;·&nbsp;</span>
+      <span>Open Source</span><span>&nbsp;·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===== STATS STRIP ===== -->
+  <div class="stats-strip">
+    <!-- grid-box applies the divided-grid visual -->
+    <div class="grid-box stats-row">
+      <div class="grid-cell stat-cell">
+        <!-- data-count triggers the JS counter animation -->
+        <span class="stat-num" data-count="9" data-suffix="+">9+</span>
+        <span class="stat-lbl">Technical Skills</span>
+      </div>
+      <div class="grid-cell stat-cell">
+        <span class="stat-num" data-count="5" data-suffix="+">5+</span>
+        <span class="stat-lbl">Projects Built</span>
+      </div>
+      <div class="grid-cell stat-cell">
+        <span class="stat-num">3rd</span>
+        <span class="stat-lbl">Year Student</span>
+      </div>
+      <div class="grid-cell stat-cell">
+        <span class="stat-num">SEECS</span>
+        <span class="stat-lbl">NUST Campus</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ME ===== -->
+  <!-- Float layout meets Lab 03 float/clear requirement -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="eyebrow">About me</div>
+
+    <!-- about-split uses CSS grid on modern browsers;
+         about-img-col/about-text-col use float as fallback (Lab 03) -->
+    <div class="about-split clearfix">
+
+      <div class="about-img-col">
+        <div class="about-img-frame">
+          <img src="images/05.jpg" alt="Muhammad Rubait Zakria — profile photo">
+          <div class="about-tag">NUST SEECS · Islamabad</div>
+        </div>
+        <div class="about-img-accent" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-text-col">
+        <h2 class="h-xl" id="about-heading" style="margin-bottom:20px;">Hi, I'm Rubait.</h2>
+        <div class="about-body">
+          <p>I'm an undergraduate pursuing <strong>BE Software Engineering at NUST SEECS</strong>, one of Pakistan's premier engineering schools. I like building things that work — and understanding exactly why they work.</p>
+          <p>Currently in my <strong>3rd year (Semester 5)</strong>, I split my time between data structures assignments in C++, full-stack web projects, and reinstalling Linux because I enjoy the process more than the result.</p>
+          <p>My interests sit at the intersection of <strong>clean code, systems thinking, and applied AI</strong>. I care about software that's readable, testable, and solves real problems.</p>
+        </div>
+        <div class="about-details-grid">
+          <div class="detail-row">
+            <div class="detail-label">University</div>
+            <div class="detail-value">NUST, Islamabad</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Degree</div>
+            <div class="detail-value">BE Software Eng.</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Year</div>
+            <div class="detail-value">3rd — Semester 5</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Location</div>
+            <div class="detail-value">Islamabad, PK</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Clear floats -->
+    <div class="clear"></div>
+  </section>
+
+  <!-- ===== FEATURED SKILLS ===== -->
+  <section class="section" id="skills-preview" aria-labelledby="skills-heading">
+    <div class="flex-between" style="margin-bottom:32px;">
+      <div>
+        <div class="eyebrow">Top Skills</div>
+        <h2 class="h-xl" id="skills-heading">What I work with</h2>
+      </div>
+      <a href="skills.html" class="link-arrow" id="skills-all-link">Full skill set →</a>
+    </div>
+
+    <!-- 3-column grid of skill bars -->
+    <div class="grid-box skills-preview-grid">
+      <div class="grid-cell skill-cell">
+        <span class="skill-badge badge-lang">Language</span>
+        <div class="skill-name-row">
+          <span class="skill-name">HTML &amp; CSS</span>
+          <span class="skill-pct">95%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill w-95"></div></div>
+      </div>
+      <div class="grid-cell skill-cell">
+        <span class="skill-badge badge-lang">Language</span>
+        <div class="skill-name-row">
+          <span class="skill-name">C++</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill w-90"></div></div>
+      </div>
+      <div class="grid-cell skill-cell">
+        <span class="skill-badge badge-tool">Tool</span>
+        <div class="skill-name-row">
+          <span class="skill-name">Git &amp; GitHub</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill w-90"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT I DO ===== -->
+  <section class="section" id="services" aria-labelledby="services-heading">
+    <div class="eyebrow">What I do</div>
+    <h2 class="h-xl" id="services-heading" style="margin-bottom:36px;">Focus Areas</h2>
+
+    <!-- Numbered list of disciplines -->
+    <div class="services-list">
+      <div class="service-row">
+        <span class="service-num">01</span>
+        <div class="service-body">
+          <h3>Full-Stack Development</h3>
+          <p>Building responsive, production-ready web apps — from clean HTML/CSS interfaces to Node.js backends and SQL databases. I care about architecture, not just making it work.</p>
+        </div>
+        <span class="service-emoji" aria-hidden="true">🖥️</span>
+      </div>
+      <div class="service-row">
+        <span class="service-num">02</span>
+        <div class="service-body">
+          <h3>Linux &amp; Systems</h3>
+          <p>I've dual-booted Arch, Ubuntu, and Fedora more times than I can count — by choice. Shell scripting, package management, and OS internals are hobbies that became skills.</p>
+        </div>
+        <span class="service-emoji" aria-hidden="true">🐧</span>
+      </div>
+      <div class="service-row">
+        <span class="service-num">03</span>
+        <div class="service-body">
+          <h3>AI &amp; Machine Learning</h3>
+          <p>Exploring computer vision and NLP through academic coursework and personal projects. Interested in how models learn — not just how to use APIs.</p>
+        </div>
+        <span class="service-emoji" aria-hidden="true">🤖</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">MR<span>Z</span></a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Muhammad Rubait Zakria</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
