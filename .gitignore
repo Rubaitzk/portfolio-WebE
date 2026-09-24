@@ -1,0 +1,8 @@
+# Lab Documents and Screenshots
+lab doc/
+*.docx
+
+# OS & Temp files
+.DS_Store
+Thumbs.db
+*.tmp
